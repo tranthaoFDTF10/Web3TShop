@@ -69,19 +69,8 @@ p{
     background: #563434;
 }
 .header{
- 
     background: pink;
 }
-/*
-.navbar{
-    background: pink;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-*/
 .header .row{ /*chua khoang trong cho hinh gio hang*/
     margin-top: 70px;
 }
@@ -263,4 +252,77 @@ ul{
     .col-2, .col-3, .col-4{
         flex-basis: 100%;
     }
+}
+
+
+/*tai khoan*/
+.account-page{
+    padding: 50px 0;
+    background: pink;
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden; /*viet sau*/
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 5px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s; /*viet sau*/
+
 }

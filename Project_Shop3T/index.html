@@ -3,6 +3,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trang chủ</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -19,7 +21,7 @@
     
             </div>
             <nav>
-                <ul>
+                <ul id="MenuItems">
                     <li><a class="nav_link" href="index.html">Trang chủ</a></li>
                     <li><a class="nav_link" href="sanpham.html">Sản phẩm</a></li>
                     <li><a class="nav_link" href="gioithieu.html">Giới thiệu</a></li>
@@ -28,6 +30,7 @@
                 </ul>
             </nav>
             <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
 
         </div>
         <div class="row">
@@ -223,54 +226,7 @@
                 </div>
                 <p>150.000đ</p>
             </div>
-            <div class="col-4">
-                <img src="images/aothun1.png">
-                <h4>áo thun nam 3TS - xanh</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>150.000đ</p>
-            </div>
-            <div class="col-4">
-                <img src="images/aothun2.png">
-                <h4>áo thun nam - trắng</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>150.000đ</p>
-            </div>
-            <div class="col-4">
-                <img src="images/giay1.png">
-                <h4>Giày thể thao nam 3TS - trắng</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>250.000đ</p>
-            </div>
-            <div class="col-4">
-                <img src="images/giay2.png">
-                <h4>Giày thể thao nam 3TS - đen</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>250.000đ</p>
-            </div>
+            
         </div>
     </div>
 
@@ -306,16 +262,16 @@
                </div>
                <div class="footer-col-2">
                 <img src="images/logofooter.png">
-                <p>3T Store luôn là người đồng hành cùng bạn.</p>
-               </div>
+                <p>3T Store luôn là người đồng hành cùng bạn.<br>Địa chỉ: đường 3/2 trường ĐHCT khu II</p>
+            </div>
         
                 <div class="footer-col-3">
                     <h3>Follow us</h3>
                     <ul>
-                        <li>Facebook</li>
-                        <li>Zalo</li>
-                        <li>Instagram</li>
-                        <li>TikTok</li>
+                        <li><a href="https://www.facebook.com/"> Facebook</a></li>
+                        <li><a href="https://zaloweb.me/">Zalo</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://twitter.com/">Twitter</a></li>
                     </ul>
                     </div>
            </div>
@@ -323,5 +279,17 @@
            <p class="copyright">Copyright 2022 - FDT GROUP</p>
        </div>
    </div>
+   <script>
+       var MenuItems = document.getElementById("MenuItems");
+       MenuItems.style.maxHeight= "0px";
+       function menutoggle(){
+           if(MenuItems.style.maxHeight== "0px"){
+            MenuItems.style.maxHeight= "200px"
+           }
+           else{
+            MenuItems.style.maxHeight= "0px";
+           }
+       }
+   </script>
 </body>
 </html>
